@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>REV:REVOLUTION WE BRING TO FARMING</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="assets/css/master.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="assets/js/master.js"></script>
+  </style>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script>
+    $(document).ready(function () {
+      var x = 0, v = 0;
+      $("#show").hide();
+      $("#clickh1").click(function () {
+        $("#show").hide();
+      });
+      $("#clickh1").click(function () {
+        if (x % 2 == 0) {
+          $("#show").show();
+          x = x + 1;
+        }
+        else {
+          $("#show").hide();
+          x = x + 1
+        }
+
+      });
+
+      $("#show2").hide();
+      $("#clickh2").click(function () {
+        $("#show2").hide();
+      });
+      $("#clickh2").click(function () {
+        if (v % 2 == 0) {
+          $("#show2").show();
+          v = v + 1;
+        }
+        else {
+          $("#show2").hide();
+          v = v + 1
+        }
+
+      });
+
+      $("#show3").hide();
+      $("#clickh3").click(function () {
+        $("#show3").hide();
+      });
+      $("#clickh3").click(function () {
+        if (v % 2 == 0) {
+          $("#show3").show();
+          v = v + 1;
+        }
+        else {
+          $("#show3").hide();
+          v = v + 1
+        }
+
+      });
+
+      $("#show4").hide();
+      $("#clickh4").click(function () {
+        $("#show4").hide();
+      });
+      $("#clickh4").click(function () {
+        if (v % 2 == 0) {
+          $("#show4").show();
+          v = v + 1;
+        }
+        else {
+          $("#show4").hide();
+          v = v + 1
+        }
+
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><i class="fas fa-tractor"></i> Re_v_Farm</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <!--a class="nav-link" href="#" style="color: white;">Act &amp; rules</a>-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" style="color: white;">About Us</a>
+          </li>
+          <!-- google -->
+          <li>
+            <p style="color: white;text-shadow: 3px 3px 5px #000000;padding: 2px;margin-right: 15px;">
+              <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;किसान
+                का अधिकार &nbsp;&nbsp; किसान के द्वार</b></p>
+          </li>
+          <li>
+            <div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+              function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+              }
+            </script>
+
+            <script type="text/javascript"
+              src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          </li>
+          <!-- google -->
+        </ul>
+
+        <div class="my-2 my-lg-0">
+
+          <button type="button" class="btn btn-info btn-lg grow" id="myBtn">
+            <span class="far fa-user grow"></span> Login/Signup
+          </button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header" style="padding:35px 50px;">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4><span class="fa fa-lock"></span> Login</h4>
+              </div>
+              <div class="modal-body" style="padding:40px 50px;">
+                <form role="form" method="POST" action="LoginHandler/login.php">
+                  <h3>Choose yourself:</h3>
+                  <div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" id="1" name="optradio" value="1">Farmer
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" id="2" name="optradio" value="2">Landlord
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" id="3" name="optradio" value="3">Retailer\Local
+                        Vendor
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" id="4" name="optradio" value="4">Mandi
+                      </label>
+                    </div>
+
+                    <!--  <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" id="5" name="optradio" value="5">Agri Expert
+                      </label>
+                    </div> -->
+                  </div>
+                  <br>
+                  <div class="form-group">
+                    <label for="usrname"><span class="far fa-user"></span> Username</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter username"
+                      required="required">
+                  </div>
+                  <div class="form-group">
+                    <label for="psw"><span class="far fa-eye"></span> Password</label>
+                    <input type="password" class="form-control" id="password" name="password"
+                      placeholder="Enter password" required="required">
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="" checked>Remember me</label>
+                  </div>
+                  <button type="submit" placeholder="Login" name="login" class="btn btn-success btn-block"><span
+                      class="fas fa-power-off"></span> Login</button>
+
+                  <p>Forgot <a href="#">Password?</a></p>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <p>Not a member? <a href="RegisterHandler/register.html">Sign Up</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Body starts -->
+  <div class="row">
+    <img 
+      src="image/bg.jpeg"width="1500" height="300" alt="banner" >
+  </div>
+  <div class="container-fluid">
+    <!-- <div class="row">
+      <img class="img-responsive" src="http://agricoop.gov.in/sites/all/themes/agricoop/images/inner-banner.jpg"
+        alt="Farmer">
+    </div> -->
+    <br>
+    <div class="row">
+      <div class="col-md-2 col-sm-12">
+        <div class="card " style="border: none;">
+          <button class="btn btn-success grow" style="background-color: #5cb85c;color: white;padding: 1px;"
+            id="clickh1">Agriculture & Horticulture<br>Corner</button>
+          <div class="card-body text-center" id="show">
+            <ul class="list-group list-group-flush">
+
+              <a href="#" data-toggle="modal" data-target="#seedModal" class="list-group-item">Seeds</a>
+              <a href="#" class="list-group-item">Fertiliser</a>
+              <a href="#" class="list-group-item">Pestisides</a>
+            </ul>
+          </div>
+          <div class="modal" id="seedModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>S.NO</th>
+                        <th>State</th>
+                        <th>Total valid dealer</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>1</th>
+                        <th>A AND N ISLANDS</th>
+                        <th>18</th>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>ANDHRA PRADESH</td>
+                        <td>3889</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>ASSAM</td>
+                        <td>722</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>BIHAR</td>
+                        <td>5546</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>CHHATTISGARH</td>
+                        <td>2257</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>DELHI</td>
+                        <td>6</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>GUEST</td>
+                        <td>142</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>GUJARAT</td>
+                        <td>14128</td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>HARYANA</td>
+                        <td>1514</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>HIMACHAL PRADESH</td>
+                        <td>227</td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>JAMMU&KASHMIR</td>
+                        <td>353</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>JHARKAND</td>
+                        <td>2232</td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>KARNATAKA</td>
+                        <td>7093</td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td>KERALA</td>
+                        <td>244</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>MADHYA PRADESH</td>
+                        <td>9950</td>
+                      </tr>
+                      <tr>
+                        <td>16</td>
+                        <td>MAHARASHTRA</td>
+                        <td>31596</td>
+                      </tr>
+                      <tr>
+                        <td>17</td>
+                        <td>MEGHALAYA</td>
+                        <td>8</td>
+                      </tr>
+                      <tr>
+                        <td>18</td>
+                        <td>MIZORAM</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>19</td>
+                        <td>NAGALAND</td>
+                        <td>5</td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td>ORISSA</td>
+                        <td>17</td>
+                      </tr>
+                      <tr>
+                        <td>21</td>
+                        <td>PUDUCHERRY</td>
+                        <td>5</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>PUNJAB</td>
+                        <td>5326</td>
+                      </tr>
+                      <tr>
+                        <td>23</td>
+                        <td>RAJASTHAN</td>
+                        <td>10512</td>
+                      </tr>
+                      <tr>
+                        <td>24</td>
+                        <td>SIKKIM</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td>25</td>
+                        <td>TAMILNADU</td>
+                        <td>6982</td>
+                      </tr>
+                      <tr>
+                        <td>26</td>
+                        <td>TELANAGANA</td>
+                        <td>2668</td>
+                      </tr>
+                      <tr>
+                        <td>27</td>
+                        <td>TRIPURA</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>28</td>
+                        <td>UTTAR PRADESH</td>
+                        <td>18983</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>UTTARAKHAND</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>30</td>
+                        <td>WEST BENGAL</td>
+                        <td>1890</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td>&nbsp</td>
+                      </tr>
+                      <tr>
+                        <td>Total</td>
+                        <td>&nbsp</td>
+                        <td>&nbsp</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>&nbsp</td>
+                        <td>&nbsp</td>
+                      </tr>
+                      <tr>
+                        <td>126345</td>
+                        <td>&nbsp</td>
+                        <td>&nbsp</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>&nbsp</td>
+                        <td>&nbsp</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+         <!-- <button class="btn btn-success" style="background-color: #5cb85c;color: white;" id="clickh2">POST
+             HARVEST</button>
+          <div class="card-body text-center" id="show2">
+            <ul class="list-group list-group-flush">
+
+              <a href="#" class="list-group-item">Storage</a>
+              <a href="#" class="list-group-item">Market Price</a>
+            </ul>
+          </div>
+          <br>-->
+          <button class="btn btn-success" style="background-color: #5cb85c;color: white;" id="clickh3">Soil
+            Health</button>
+          <div class="card-body text-center" id="show3">
+            <ul class="list-group list-group-flush">
+
+              <a href="#" data-toggle="modal" data-target="#soilModal" class="list-group-item">Soil Test</a>
+            </ul>
+          </div>
+          <div class="modal" id="soilModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h2>Soil Test</h2>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name"
+                      required="required">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Username"
+                      required="required">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="uid" name="uid"
+                      placeholder="Aadhar/Ration card/Green Card" required="required">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="city" name="city" placeholder="City"
+                      required="required">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="district" name="district" placeholder="District"
+                      required="required">
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" name="terms" class="control-label"> I agree to the <a
+                      href="terms.html"><u>Terms and
+                        Conditions.</u></a>
+                  </div>
+                  <input class="btn btn-primary" type="submit" name="register" value="Submit" placeholder="Submit">
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <a href="newsfeed.php"><button class="btn btn-success" style="background-color: #5cb85c;color: white; padding: 4px; width: 180px ; ;" id="clickh4">
+           NEWS FEED</button></a><br>
+           <a href="croppredict.php"><button class="btn btn-success" style="background-color: #5cb85c;color: white; padding: 4px; width: 180px ; ;" id="clickh5">
+            CROP PREDICTION</button></a><br>
+            <a href="Weather-App-JS-development/Weather-App-JS-development/dist/windex.html"><button class="btn btn-success" style="background-color: #5cb85c;color: white; padding: 4px; width: 180px ; ;" id="clickh5">
+              WEATHER PREDICTION</button></a><br>
+              <a href="schemes.html"><button class="btn btn-success" style="background-color: #5cb85c;color: white; padding: 4px; width: 180px ; ;" id="clickh5">
+                FARMING SCHEMES</button></a><br>
+          <!-- <img src="https://image.isu.pub/110110103442-bb8b1c429ea8430e88e285d0060a0385/jpg/page_1_thumb_large.jpg"
+            style="height: 200px;width: inherit;"> -->
+          <!-- <br>
+          <button class="btn btn-success" style="background-color: #5cb85c;color: white;" id="clickh4">Market</button>
+          <div class="card-body text-center" id="show4">
+            <ul class="list-group list-group-flush">
+
+              <a href="#" class="list-group-item">Seeds</a>
+              <a href="#" class="list-group-item">Fertiliser</a>
+              <a href="#" class="list-group-item">Pestisides</a>
+            </ul>
+          </div> -->
+
+          <!--  -->
+        </div>
+      </div>
+      <div class="col-md-7 col-sm-12">
+        <!--a class="weatherwidget-io" href="https://forecast7.com/en/20d3085d82/bhubaneswar/" data-label_1="BHUBANESWAR"
+          data-label_2="WEATHER" data-font="Verdana" data-icons="Climacons Animated"
+          data-theme="weather_one">BHUBANESWAR
+          WEATHER</a>
+        <script>
+          !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+        </script>-->
+        <div class="card">
+          <div class="text-center card-body">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+              </li>
+           
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div id="home" class="container tab-pane active"><br>
+                <p>The current scenario is such that is difficult to find vacant land where needy farmers
+                  can take lease and sow their seeds for harvest. In addition to this, when farmers bring their
+                  harvested grains to mandi, struggle a lot to get their crops sold out at their desired rate. Also,
+                  there is no application to provide a means of easy transaction for all the farming activities and
+                  personal expenses.</p>
+                <br>
+                <h3>Keynotes <span><i class="fa fa-bullhorn"></i></span></h3>
+                <ul class="list-group text-left">
+                  <li class="list-group-item">A roof for the farmers to know all the government scheme.
+                  <li class="list-group-item">A chat forum to see updates, views, solutions presented by others.</li>
+                  <li class="list-group-item">A one to one interaction between the farmers and industry experts.</li>
+                  <li class="list-group-item">What we aim to focus is to make the process simpler and easier.</li>
+                  <li class="list-group-item">Retailers/local vendors to increaser their selling.</li>
+                  <li class="list-group-item">Making farmer’s life easier with a one stop platform where all the
+                    quires would be taken care of
+                    and the
+                    farmer has to just focus on their production and farming.</li>
+                </ul>
+              </div>
+             
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-12">
+        <div class="card">
+          <div class="card-header text-center" style="background-color: #5cb85c;color: white;"><b>Sarkari
+              Yojana</b><br>Govt. scheme and programmes</div>
+          <div class="card-body text-center">
+            <table class="table table-light table-striped">
+              <thead>
+                <tr>
+                  <!-- <th></th> -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a data-toggle="modal" href="#schemeModal" id="schemeLink" style="color: black;">Soil Health Card
+                      Scheme</a></td>
+                </tr>
+                <div class="modal fade" id="schemeModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                      </div>
+
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        Soil Health Card Scheme is a scheme launched by the Government of India in 19 February 2015.
+                        Under the scheme, the government plans to issue soil cards to farmers which will carry crop-wise
+                        recommendations of nutrients and fertilisers required for the individual farms to help farmers
+                        to improve productivity through judicious use of inputs. All soil samples are to be tested in
+                        various soil testing labs across the country. Thereafter the experts will analyse the strength
+                        and weaknesses (micro-nutrients deficiency) of the soil and suggest measures to deal with it.
+                        The result and suggestion will be displayed in the cards. The government plans to issue the
+                        cards to 14 crore farmers.
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <tr>
+                  <td>National Mission for Sustainable Agriculture (NMSA)</td>
+                </tr>
+                <tr>
+                  <td>Neem Coated Urea (NCU)</td>
+                </tr>
+                <tr>
+                  <td>Pradhan Mantri Krishi Sinchai Yojana (PMKSY)</td>
+                </tr>
+                <tr>
+                  <td>Paramparagat Krishi Vikas Yojana (PKVY)</td>
+                </tr>
+                <tr>
+                  <td>National Agriculture Market (e-NAM)</td>
+                </tr>
+                <tr>
+                  <td>Micro Irrigation Fund (MIF)</td>
+                </tr>
+                <tr>
+                  <td>Agriculture Contingency Plan </td>
+                </tr>
+                <tr>
+                  <td>Rainfed Area Development Programme (RADP)</td>
+                </tr>
+                <tr>
+                  <td>National Watershed Development Project for Rainfed Areas (NWDPRA)</td>
+                </tr>
+                <tr>
+                  <td>Pradhan Mantri Fasal Bima Yojana (PMFBY)</td>
+                </tr>
+                <tr>
+                  <td>Livestock insurance Scheme</td>
+                </tr>
+                <tr>
+                  <td>National Scheme on Welfare of Fishermen</td>
+                </tr>
+                <tr>
+                  <td>Scheme on Fisheries Training and Extension</td>
+                </tr>
+                <tr>
+                  <td>Gramin Bhandaran Yojna</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Body ended -->
+  <!-- Footer -->
+  <footer class="page-footer font-small blue pt-4 container-fluid" style="
+   left: 0;
+   bottom: 0;
+   background-color: #5cb85c;
+   color: white;
+   background-image: url('http://upagripardarshi.gov.in/images/bg-footer.jpg');
+   text-align: center;" id="about">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">Footer Content</h5>
+          <!-- <p>Here we can use rows and columns here to organize your footer content.</p> -->
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">Phone no: </h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p>+918887563233</p>
+            </li>
+            <li>
+              <p>+918076496885</p>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">Mail us</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="yashineha2000@gmail.com" style="color: white;">yashineha2000@gmail.com</a>
+            </li>
+            <li>
+              <a href="arshita159@gmail.com" style="color: white;">arshita159@gmail.com</a>
+            </li>
+            <li>
+              <a href="shivangitripathi7381@gmail.com" style="color: white;">shivangitripathi7381@gmail.com</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">&copy; Re_V_Farming
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>
